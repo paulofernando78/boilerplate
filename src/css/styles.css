@@ -29,7 +29,7 @@ header {
 }
 
 .header-logo {
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 
 nav {
@@ -38,17 +38,27 @@ nav {
   padding: var(--padding);
   border-radius: var(--border-radius);
   width: max-content;
-  display: none;
 }
 
 nav.visible {
   display: block;
 }
 
-main {
-  grid-area: main;
-  padding: var(--padding);
-  border: 1px solid var(--gray-4);
-  border-radius: var(--border-radius);
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  wc-button {
+    display: none;
+  }
 }
 

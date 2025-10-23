@@ -25,8 +25,7 @@ class Button extends HTMLElement {
       this.dispatchEvent(
         new CustomEvent("nav-click", {
           bubbles: true,
-          composed: true,
-          detail: {},
+          composed: true
         })
       );
     });
