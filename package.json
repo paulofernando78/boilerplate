@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "git add . && git commit -m \"wip\" && git push"
   },
   "author": "Paulo Fernando Silva",
   "license": "MIT",

@@ -1,0 +1,10 @@
+/* base */
+@import "@css/base/reset.css";
+@import "@css/base/typography.css";
+
+/* theme */
+@import "@css/theme/colors.css";
+@import "@css/theme/dark-mode.css";
+
+/* utilities */
+@import "@css/utils/spacing.css";

@@ -1,21 +1,21 @@
 //! Imports
 
 // Atoms
-import Button from "@components/atoms/Button";
+import Button from "../components/atoms/Button"
 
 // Molecules
 
 // Organisms
 
-// Tempplates
+// Templates
 
 //! Customs 
 
 // Atoms
-customElements.define("button", Button)
+customElements.define("wc-button", Button)
 
 // Molecules
 
 // Organisms
 
-// Tempplates
+// Templates

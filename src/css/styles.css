@@ -1,13 +1,4 @@
-/* base */
-@import "@css/base/reset.css";
-@import "@css/base/typography.css";
-
-/* theme */
-@import "@css/theme/colors.css";
-@import "@css/theme/dark-mode.css";
-
-/* utilities */
-@import "@css/utils/spacing.css";
+@import "@css/imports.css";
 
 :root {
   --border-radius: 5px
@@ -34,6 +25,7 @@ header {
   border-radius: var(--border-radius);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -46,6 +38,11 @@ nav {
   padding: var(--padding);
   border-radius: var(--border-radius);
   width: max-content;
+  display: none;
+}
+
+nav.visible {
+  display: block;
 }
 
 main {
