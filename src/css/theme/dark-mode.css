@@ -1,0 +1,12 @@
+:root {
+  --background-color: #e0e0e0;
+  --text-color: #000000;
+  --button__color: #e0e0e0;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --background-color: #18191f;
+  --text-color: #ffffff;
+  --button-color: #18191f;
+}

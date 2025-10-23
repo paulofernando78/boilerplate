@@ -1,0 +1,57 @@
+/* base */
+@import "@css/base/reset.css";
+@import "@css/base/typography.css";
+
+/* theme */
+@import "@css/theme/colors.css";
+@import "@css/theme/dark-mode.css";
+
+/* utilities */
+@import "@css/utils/spacing.css";
+
+:root {
+  --border-radius: 5px
+}
+
+body {
+  padding: var(--padding);
+  background-color: var(--background-color, #fff);
+  /* Grid Areas */
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "nav main";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  /* ... */
+  height: 100dvh;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--gray-4);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-left: 5px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--gray-4);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  width: max-content;
+}
+
+main {
+  grid-area: main;
+  padding: var(--padding);
+  border: 1px solid var(--gray-4);
+  border-radius: var(--border-radius);
+}
+

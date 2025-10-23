@@ -1,0 +1,63 @@
+/* ---------------------------------
+   Font variables
+   --------------------------------- */
+:root {
+  --font-family-base: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --font-family-heading: var(--font-family-base);
+  --font-size-base: 1rem; /* Default: 16px */
+  --line-height-base: 1.6;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --text-color: #222;
+  --heading-color: #111;
+  --link-color: #0077ff;
+  --link-hover: #0047aa;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+}
+
+/* ---------------------------------
+   Headings
+   --------------------------------- */
+h1 {
+  font-size: 2.5rem;
+}
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {line-height: 1.2;}
+
+p { max-width: 65ch; /* Keeps paragraphs comfortably readable */ }
+
+strong { font-weight: var(--font-weight-bold); }
+em { font-style: italic; }
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 3px solid var(--link-color);
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  margin: 1.5rem 0;
+}
