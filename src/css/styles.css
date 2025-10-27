@@ -57,7 +57,7 @@ nav.visible {
 }
 
 @media (min-width: 700px) {
-  wc-button {
+  #menu {
     display: none;
   }
 }
