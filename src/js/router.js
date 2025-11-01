@@ -28,5 +28,3 @@ export function renderRoute() {
 
 // 👇 Handles browser navigation (Back/Forward buttons)
 window.addEventListener("popstate", renderRoute);
-
-document.addEventListener("DOMContentLoaded", renderRoute);
