@@ -1,7 +1,7 @@
 import styleImports from "@css/imports.css?inline";
-import styleHome from "@css/pages/home.css?inline";
+import styleHome from "@css/pages/about.css?inline";
 
-class Home extends HTMLElement {
+class Contact extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -23,10 +23,9 @@ class Home extends HTMLElement {
   render() {
     /* html */ 
     this.container.innerHTML = `
-      <h1 class="title">JS Vanilla + Vite Boilerplate</h1>
-      <p>Welcome to the Home Page</p>
+      <h1>Contact Page</h1>
     `
   }
 }
 
-export default Home;
+export default Contact;

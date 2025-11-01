@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -59,12 +61,6 @@ h6 {
 
 p {
   text-wrap: pretty;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
 }
 
 /* :focus {

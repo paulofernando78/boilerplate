@@ -29,6 +29,10 @@ header {
   align-items: center;
 }
 
+.header-logo {
+  line-height: 1;
+}
+
 nav {
   grid-area: nav;
   background-color: var(--gray-4);
