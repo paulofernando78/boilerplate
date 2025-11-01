@@ -27,7 +27,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 5px;
 }
 
 nav {
@@ -57,5 +56,9 @@ nav.visible {
 @media (min-width: 700px) {
   #menu {
     display: none;
+  }
+
+  .header-logo {
+    padding-left: 5px;
   }
 }

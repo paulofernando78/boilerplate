@@ -1,13 +1,8 @@
-import Home from "@pages/home.js";
-import LinkOne from "@pages/LinkOne.js";
-import LinkTwo from "@pages/LinkTwo.js";
-import LinkThree from "@pages/LinkThree.js";
-
 const routes = {
-  "/": Home,
-  "/link-one": LinkOne,
-  "/link-two": LinkTwo,
-  "/link-three": LinkThree,
+  "/": "wc-home",
+  "/link-one": "wc-link-1",
+  "/link-two": "wc-link-1",
+  "/link-three": "wc-link-1"
 };
 
 export function navigateTo(path) {
@@ -18,8 +13,8 @@ export function navigateTo(path) {
 export function renderRoute() {
   const app = document.querySelector("#app");
   const path = window.location.pathname;
-  const page = routes[path] || Home;
-  app.innerHTML = page();
+  const tagName = routes[path] || "wc-home";
+  app.innerHTML = `<${tagName}></${tagName}>`;
 }
 
 window.addEventListener("popstate", renderRoute)

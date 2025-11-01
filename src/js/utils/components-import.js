@@ -9,6 +9,9 @@ import Button from "../components/atoms/Button"
 
 // Templates
 
+// Pages
+import Home from "../../pages/Home"
+
 //! Customs 
 
 // Atoms
@@ -19,3 +22,6 @@ customElements.define("wc-button", Button)
 // Organisms
 
 // Templates
+
+// Pages
+customElements.define("wc-home", Home)
