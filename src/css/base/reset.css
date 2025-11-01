@@ -67,7 +67,7 @@ a {
   color: inherit;
 }
 
-:focus {
+/* :focus {
   outline: 2px solid #000;
   outline-offset: 2px;
-}
+} */
