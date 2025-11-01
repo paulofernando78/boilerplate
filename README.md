@@ -1,13 +1,15 @@
-{
-  👇 "rewrites" tells Vercel to redirect all incoming requests
-  to a specific file — in this case, the main SPA entry point (index.html)
-  "rewrites": [
-    { 
-      👇 This matches ANY route (e.g. /, /about, /contact, /aaa, etc.)
-      "source": "/(.*)",
+### ⚙️ Vercel Configuration for SPA Routing
 
-      👇 Instead of showing a 404 error, Vercel will serve index.html
-      so that your JavaScript router (router.js) can decide what to show.
+When deploying a **Single Page Application (SPA)** to **Vercel**, you need to rewrite all incoming routes to `index.html`.  
+This ensures that your client-side router (like `router.js`) can handle navigation instead of the server returning a 404 error.
+
+Add a file named **`vercel.json`** to the root of your project with the following content:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
