@@ -17,7 +17,7 @@ export function navigateTo(path) {
 // 👇 Decides which component to render based on the current URL
 export function renderRoute() {
   const app = document.querySelector("#app"); // Main container
-  const path = window.location.pathname;      // Current route path
+  const path = window.location.pathname; // Current route path
 
   // If path doesn't exist in routes, use wc-404 as fallback
   const tagName = routes[path] || "wc-404";
@@ -28,3 +28,5 @@ export function renderRoute() {
 
 // 👇 Handles browser navigation (Back/Forward buttons)
 window.addEventListener("popstate", renderRoute);
+
+document.addEventListener("DOMContentLoaded", renderRoute);
