@@ -1,12 +1,13 @@
 :host {
+  display: inline-block;
   line-height: 0;
 }
 
 button {
   all: unset;
-  display: inline-flex;
+  /* display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   cursor: pointer;
   padding: 5px;
 }
